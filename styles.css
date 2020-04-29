@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;  
+}
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient( #D93D27,  #EFA53A);
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+main{
+    background: url(./imgs/background.jpg) grey;
+    height: auto;
+}
+
+h2{
+    color:#ED1D24;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.quiz-form{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item-form-hero{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.form-group .item-form-hero label{
+    cursor: pointer;
+}
+
+.form-group .item-form-hero input{
+    position: absolute;
+    margin: 128px auto;
+    z-index: -1;
+}
+
+.form-group .item-form-hero input:focus + label{
+    transition: 0.2s;
+    border:1px solid #266EF6;;
+    border-radius: 5px;
+    /* outline: 2px solid #21b4d0; */
+}
+
+.form-group .item-form-hero input:hover + label{
+    transition: 0.2s;
+    filter: brightness(70%);
+    outline: 2px dotted #21b4d0;
+}
+
+.item-form-hero input:checked + label:after{
+    background: url(./imgs/checked-green-52px.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    bottom: 45px;
+    width: 20px;
+    height: 20px;
+}
+
+.name-super-hero{
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #6F3C89;
+}
+
+.scoreboard{
+    display: none;
+    position: fixed;
+    top: 168px;
+    left: 190PX;
+    margin: 0;
+    padding: 10px;
+}
+
+.scoreboard .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid red;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.scoreboard .score h3{
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 36px auto;
+}
+.scoreboard .score img{
+    width: 25px;
+    height: 25px;
+    margin: 36px auto;
+}
+
