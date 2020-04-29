@@ -1,5 +1,5 @@
 const radioInputs = document.querySelectorAll('input')
-const scoreBoard = document.querySelector('.scoreBoard')
+const scoreBoard = document.querySelector('.scoreboard')
 const h3Score = document.querySelector('h3')
 const correctAnswers = ['A', 'A', 'A', 'A']
 const userAnswers = []
@@ -13,7 +13,6 @@ const getUserAnswers = event => {
     numberAnswer === 4 ? checkNumberAnswer() : undefined
 }
 
-
 const addsListeningForInput = input => {
     input.addEventListener('click', getUserAnswers)
 }
@@ -23,6 +22,7 @@ radioInputs.forEach(addsListeningForInput)
 const showScoreBoard = state => {
     state ? scoreBoard.style.display = 'inline-block' : scoreBoard.style.display = 'none'
 }
+
 const clearCheckedInput = () => {
     radioInputs.forEach(input => input.checked = false);
     userAnswers.length = 0
