@@ -6,6 +6,9 @@
     outline: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility; 
 }
 
 header{
@@ -20,14 +23,17 @@ header{
 
 main{
     background: url(./imgs/background.jpg) grey;
-    height: auto;
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-h2{
-    color:#ED1D24;
+#subtitle{
+    color: #ED1D24;
     text-align: center;
     justify-content: center;
-    padding-top: 30px;
+    padding: 25px 0px;
 }
 
 .quiz-form{
@@ -39,7 +45,7 @@ h2{
 .item-form-hero{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 0;
 }
 
@@ -56,14 +62,16 @@ h2{
 .form-group .item-form-hero input:focus + label{
     transition: 0.2s;
     border:1px solid #266EF6;;
-    border-radius: 5px;
+    border-radius: 10px;
     /* outline: 2px solid #21b4d0; */
 }
 
 .form-group .item-form-hero input:hover + label{
     transition: 0.2s;
     filter: brightness(70%);
-    outline: 2px dotted #21b4d0;
+    /* outline: 2px dotted #21b4d0; */
+    border:1px dotted #266EF6;;
+    border-radius: 10px;
 }
 
 .item-form-hero input:checked + label:after{
@@ -79,6 +87,10 @@ h2{
     height: 20px;
 }
 
+label .img-super-heroes{
+    width: 240px;
+}
+
 .name-super-hero{
     font-weight: 700;
     font-size: 28px;
@@ -90,8 +102,7 @@ h2{
     display: none;
     position: fixed;
     top: 168px;
-    left: 190PX;
-    margin: 0;
+    margin: auto 45%;
     padding: 10px;
 }
 
@@ -103,17 +114,76 @@ h2{
     border-radius: 150px;
     width: 150px;
     height: 150px;
+    background: rgba(128, 128, 128, 0.8);
 }
 
 .scoreboard .score h3{
     color: #CC0000;
     font-weight: bold;
-    font-size: 2.5em;
-    margin: 36px auto;
+    font-size: 2em;
+    text-align: center;
 }
 .scoreboard .score img{
     width: 25px;
     height: 25px;
     margin: 36px auto;
+}
+
+.letter-item{
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    color: #CC0000;
+    border: 2px solid #CC0000;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid rgb(33, 37, 41);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.question-number{
+    margin: 1px 5px 0px 1px;
+    color: #ff8b00;
+    border: 2px solid;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+#message{
+    display: none;
+    justify-content: center;
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    background: rgba(128, 128, 128, 0.8);
+}
+
+#beginningMessage{
+    font-size: 5em;
+    color: #CC0000;
+    text-align: center;
+}
+
+.container{
+    clear: left;
 }
 

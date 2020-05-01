@@ -15,71 +15,155 @@
     <h1>Quiz Super Heroes</h1>
   </header>
   <main class="quiz">
+    <div id="message">
+      <h1 id="beginningMessage">Start</h1>
+    </div>
     <div class="container">
-      <h2>Sabe dizer quais são os Super Heróis Marvel:</h2>
+      <h2 id="subtitle">Sabe dizer quais são os Super Heróis da Marvel:</h2>
       <form class="quiz-form">
-        <div class="form-group">
+        <!-- 1 -->
+        <div class="form-group" id="question1">
+          <p class="question-number">1</p>
           <div class="form-check form-check-inline item-form-hero">
-            <input class="form-check-input" type="radio"  name="iptQuest1" id="iptQuest1" value="A">
-            <label class="form-check-label" for="iptQuest1">
-              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/ironman-256.png" alt="">
-            </label>
-            <strong class="name-super-hero">Homem de Ferro</strong>
-          </div>
-          <div class="form-check form-check-inline item-form-hero">
-            <input class="form-check-input" type="radio"  name="iptQuest1" id="iptQuest2" value="B">
+            <p class="letter-item">A</p>
+            <input class="form-check-input" type="radio" name="iptQuest1" id="iptQuest2" value="A">
             <label class="form-check-label" for="iptQuest2">
               <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/ioda-256.png" alt="">
             </label>
             <strong class="name-super-hero">Mestre Ioda</strong>
           </div>
-        </div>
-        <div class="form-group">
           <div class="form-check form-check-inline item-form-hero">
-            <input class="form-check-input" type="radio" name="iptQuest3" id="iptQuest3" value="A">
+            <p class="letter-item">B</p>
+            <input class="form-check-input" type="radio" name="iptQuest1" id="iptQuest1" value="B">
+            <label class="form-check-label" for="iptQuest1">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/ironman-256.png" alt="">
+            </label>
+            <strong class="name-super-hero">Homem de Ferro</strong>
+          </div>
+
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">C</p>
+            <input class="form-check-input" type="radio" name="iptQuest1" id="iptQuest3" value="C">
             <label class="form-check-label" for="iptQuest3">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/minion-bob-256.png" alt="">
+            </label>
+            <strong class="name-super-hero">Bob</strong>
+          </div>
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">D</p>
+            <input class="form-check-input" type="radio" name="iptQuest1" id="iptQuest4" value="D">
+            <label class="form-check-label" for="iptQuest4">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/bb8-256.png" alt="">
+            </label>
+            <strong class="name-super-hero">BB8</strong>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="form-group" id="question2">
+          <p class="question-number">2</p>
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">A</p>
+            <input class="form-check-input" type="radio" name="iptQuest2" id="iptQuest6" value="A">
+            <label class="form-check-label" for="iptQuest6">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/dracula.png" alt="">
+            </label>
+            <strong class="name-super-hero">Dracula</strong>
+          </div>
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">B</p>
+            <input class="form-check-input" type="radio" name="iptQuest2" id="iptQuest5" value="B">
+            <label class="form-check-label" for="iptQuest5">
               <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/captain-america-256.png" alt="">
             </label>
             <strong class="name-super-hero">Capitão America</strong>
           </div>
           <div class="form-check form-check-inline item-form-hero">
-            <input class="form-check-input" type="radio" name="iptQuest3" id="iptQuest4" value="B">
-            <label class="form-check-label" for="iptQuest4">
-              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/dracula.png" alt="">
+            <p class="letter-item">C</p>
+            <input class="form-check-input" type="radio" name="iptQuest2" id="iptQuest7" value="C">
+            <label class="form-check-label" for="iptQuest7">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/magneto-256.png" alt="">
             </label>
-            <strong class="name-super-hero">Dracula</strong>
+            <strong class="name-super-hero">Magneto</strong>
+          </div>
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">D</p>
+            <input class="form-check-input" type="radio" name="iptQuest2" id="iptQuest8" value="D">
+            <label class="form-check-label" for="iptQuest8">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/minion-kevin-256.png" alt="">
+            </label>
+            <strong class="name-super-hero">Kevin</strong>
           </div>
         </div>
-        <div class="form-group">
+        <!-- 3 -->
+        <div class="form-group" id="question3">
+          <p class="question-number">3</p>
           <div class="form-check form-check-inline item-form-hero">
-            <input class="form-check-input" type="radio"  name="iptQuest5" id="iptQuest5" value="A">
-            <label class="form-check-label" for="iptQuest5">
+            <p class="letter-item">A</p>
+            <input class="form-check-input" type="radio" name="iptQuest3" id="iptQuest10" value="A">
+            <label class="form-check-label" for="iptQuest10">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/sonic-256.png" alt="">
+            </label>
+            <strong class="name-super-hero">Sonic</strong>
+          </div>
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">B</p>
+            <input class="form-check-input" type="radio" name="iptQuest3" id="iptQuest9" value="B">
+            <label class="form-check-label" for="iptQuest9">
               <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/thor-256.png" alt="">
             </label>
             <strong class="name-super-hero">Thror</strong>
           </div>
           <div class="form-check form-check-inline item-form-hero">
-            <input class="form-check-input" type="radio" name="iptQuest5" id="iptQuest6" value="B">
-            <label class="form-check-label" for="iptQuest6">
-              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/sonic-256.png" alt="">
+            <p class="letter-item">C</p>
+            <input class="form-check-input" type="radio" name="iptQuest3" id="iptQuest11" value="C">
+            <label class="form-check-label" for="iptQuest11">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/minion-stuart-256.png" alt="">
             </label>
-            <strong class="name-super-hero">Sonic</strong>
+            <strong class="name-super-hero">Stuart</strong>
+          </div>
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">D</p>
+            <input class="form-check-input" type="radio" name="iptQuest3" id="iptQuest12" value="D">
+            <label class="form-check-label" for="iptQuest12">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/r2-d2-256.png" alt="">
+            </label>
+            <strong class="name-super-hero">R2-D2</strong>
           </div>
         </div>
-        <div class="form-group">
+        <!-- 4 -->
+        <div class="form-group" id="question4">
+          <p class="question-number">4</p>
           <div class="form-check form-check-inline item-form-hero">
-            <input class="form-check-input" type="radio" name="iptQuest7" id="iptQuest7" value="A">
-            <label class="form-check-label" for="iptQuest7">
+            <p class="letter-item">A</p>
+            <input class="form-check-input" type="radio" name="iptQuest4" id="iptQuest14" value="A">
+            <label class="form-check-label" for="iptQuest14">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/stormthropper-256.png" alt="">
+            </label>
+            <strong class="name-super-hero">Stormtrooper</strong>
+          </div>
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">B</p>
+            <input class="form-check-input" type="radio" name="iptQuest4" id="iptQuest13" value="B">
+            <label class="form-check-label" for="iptQuest13">
               <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/hulk-256.png" alt="">
             </label>
             <strong class="name-super-hero">Incrível Hulk</strong>
           </div>
           <div class="form-check form-check-inline item-form-hero">
-            <input class="form-check-input" type="radio" name="iptQuest7" id="iptQuest8" value="B">
-            <label class="form-check-label" for="iptQuest8">
-              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/stormthropper-256.png" alt="">
+            <p class="letter-item">C</p>
+            <input class="form-check-input" type="radio" name="iptQuest4" id="iptQuest15" value="C">
+            <label class="form-check-label" for="iptQuest15">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/Patrick-265.png" alt="">
             </label>
-            <strong class="name-super-hero">Stormtrooper</strong>
+            <strong class="name-super-hero">Patrick</strong>
+          </div>
+          <div class="form-check form-check-inline item-form-hero">
+            <p class="letter-item">D</p>
+            <input class="form-check-input" type="radio" name="iptQuest4" id="iptQuest16" value="D">
+            <label class="form-check-label" for="iptQuest16">
+              <img class="rounded mx-auto d-block img-super-heroes" src="./imgs/frankstain-256.png" alt="">
+            </label>
+            <strong class="name-super-hero">Frankstein</strong>
           </div>
         </div>
       </form>
@@ -87,8 +171,7 @@
   </main>
   <div class="scoreboard">
     <div class="score">
-      <img src="./imgs//shield-56px.png" alt="">
-      <h3>100%</h3>
+      <h3>0</h3>
     </div>
   </div>
   <script src="./app.js"></script>
